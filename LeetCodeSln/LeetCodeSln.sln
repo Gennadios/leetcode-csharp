@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleOutput", "ConsoleOutput\ConsoleOutput.csproj", "{3828C058-0C8D-4B73-B052-F5112FB988A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MostLikedProblems", "MostLikedProblems\MostLikedProblems.csproj", "{8530B228-FE81-48A9-BD97-A4548D5D8962}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3828C058-0C8D-4B73-B052-F5112FB988A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3828C058-0C8D-4B73-B052-F5112FB988A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3828C058-0C8D-4B73-B052-F5112FB988A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3828C058-0C8D-4B73-B052-F5112FB988A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8530B228-FE81-48A9-BD97-A4548D5D8962}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8530B228-FE81-48A9-BD97-A4548D5D8962}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8530B228-FE81-48A9-BD97-A4548D5D8962}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8530B228-FE81-48A9-BD97-A4548D5D8962}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
