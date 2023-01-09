@@ -27,30 +27,26 @@ public class Solution
             return false;
         }
 
-        var resultStack = new Stack<char>();
+        var stack = new Stack<char>();
 
         foreach (char c in s)
         {
             // If the first character is an opening parenthesis, it's not a valid string.
-            if (resultStack.Count == 0 && CloseToOpenMap.ContainsKey(c))
+            if (stack.Count == 0 && CloseToOpenMap.ContainsKey(c))
             {
                 return false;
             }
 
-            if (!CloseToOpenMap.ContainsKey(c))
+            if (stack.Count != 0 && !CloseToOpenMap.ContainsKey(c) && stack.Peek() == CloseToOpenMap[c])
             {
-                resultStack.Push(c);
-            }
-            else if (resultStack.Count != 0 && resultStack.Peek() == CloseToOpenMap[c])
-            {
-                resultStack.Pop();
+                stack.Pop();
             }
             else
             {
-                resultStack.Push(c);
+                stack.Push(c);
             }
         }
 
-        return resultStack.Count == 0;
+        return stack.Count == 0;
     }
 }
